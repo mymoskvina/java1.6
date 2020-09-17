@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args ){
         int balance = 100;
-        int income = 1100;
+        int income = 1_100;
         int limit = 1_000;
-
+        int newBalance;
         if (income > limit){
-            int new_balance = balance + income + (income / 100);
-            System.out.println(new_balance);
+            newBalance = balance + income + (income / 100);
         }
         else {
-            int new_balance = balance + income;
-            System.out.println(new_balance);
+            newBalance = balance + income;
         }
+        System.out.println(newBalance);
     }
 }
